@@ -69,9 +69,25 @@ body {
 
 .projects-button{
   background-color: #221F2F;
+  border-radius: 24px;
+  width: 317px;
+  height: 48px;
+}
+
+.projects-button-text {
+  filter: drop-shadow(0 2px 4px rgba(255, 242, 204, 0.62));
   color: #FFEBB0;
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: 600;
   font-size: 24px;
-  border-radius: 24px;
+}
+
+.connect-button{
+  background: none;
+  color: #221F2F;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration-line: underline;
+  border:none;
 }
