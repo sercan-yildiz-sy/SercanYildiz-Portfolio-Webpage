@@ -47,6 +47,13 @@ body {
   color: #363D59;
 }
 
+.subtitle{
+  font-size: 48px;
+  color: #FFF7E0;
+  font-family: 'Dangrek', 'Roboto', Arial, sans-serif;
+  font-weight: 400;
+}
+
 .subtitle-light{
   font-family:'Roboto', Arial, sans-serif;
   font-weight:250;
@@ -106,3 +113,4 @@ body {
   height: 72px;
   margin: 32px; 
 }
+
