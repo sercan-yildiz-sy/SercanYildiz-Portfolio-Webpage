@@ -111,14 +111,14 @@ body {
   background-repeat: no-repeat; 
   background-size: cover; 
   height: 76.39vw; 
-  width: 100vw;
-  margin-top: 10px;
+  width: 99vw;
+  margin-top: 0.694vw;
 }
 
 .about{
   position: absolute; 
   top: 8%; 
-  left: 5%; 
+  left: 2.2%; 
 }
 
 .head-photo{
@@ -126,7 +126,7 @@ body {
   width: 23.33vw;
   position: absolute;
   top: 16%;
-  left: 5%;
+  left: 2.2%;
 
 }
 
@@ -138,7 +138,7 @@ body {
   border-radius: 1.11vw;
   position: absolute;
   top: 16%;
-  left: 30%;
+  left: 26.5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,7 +149,7 @@ body {
 .skills-section {
   position: absolute;
   top: 24%;
-  left: 30%;
+  left: 26.5%;
   display: flex;
   gap: 1.11vw;
   flex-wrap: wrap;
@@ -159,7 +159,6 @@ body {
   background-color: #FFEBB0;
   border-radius: 1.11vw;
   box-shadow: 0.28vw 0.28vw 0 #000000;
-  color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,6 +168,105 @@ body {
   width: fit-content;
   box-sizing: content-box;
 }
+
+.soft {
+  background-color: #4C9DB0;
+  width: 19.38vw;
+  height: 4.72vw;
+  border-radius: 1.11vw;
+  position: absolute;
+  top: 48%;
+  left: 2.2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0.28vw 0.28vw 0 #363D59; 
+}
+
+.soft-section{
+  position: absolute;
+  top: 56%;
+  left: 2.2%;
+  display: flex;
+  gap: 1.67vw;
+  flex-wrap: wrap;
+}
+
+.emoji {
+  font-size: 2.5vw;
+  line-height: 1;
+}
+
+.soft-skills{
+  position: relative;
+	background: #FFEBB0;
+	border-radius: 1.11vw;
+  box-shadow: 0.28vw 0.28vw 0 #363D59;
+  padding: 0 1.67vw;     
+  height: 9.65vw;   
+  width: 13.61vw;     
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.soft-skills::after{
+  content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 1.48vw solid transparent;
+	border-top-color: #FFEBB0;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -1.39vw;
+	margin-bottom: -1.46vw;
+  filter: drop-shadow(0.28vw 0.28vw 0 #363D59);
+  border-radius: 0 0 0.28vw 0;
+}
+
+.passion{
+  left:55.5%;
+  top: 89%;
+  position: absolute;
+  color: #FFF7E0;
+}
+
+.background-arrow{
+  position: relative; 
+  background-image: url('arrow.png'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  height: 6.5vw; 
+  width: 16.6vw;
+  margin-top: 15vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.the{
+  color:#221F2F;
+  line-height: 1;
+  position: absolute;
+  top:-80%;
+  left:5%;
+}
+
+.projectstext{
+  color:#221F2F;
+  position: absolute;
+  top: -84%;
+  left: -15%;
+  transform:rotate(-15.3deg);
+  filter: drop-shadow(0 0.14vw 0.28vw rgba(255, 242, 204, 1)); 
+
+}
+
 
 
 
