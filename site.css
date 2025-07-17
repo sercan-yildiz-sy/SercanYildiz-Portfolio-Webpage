@@ -4,7 +4,7 @@ html {
   min-height: 100%;
 }
 
-@media (max-width: 3500px) {
+@media (max-width: 2400px) {
   html {
     font-size: 16px;
   }
@@ -12,8 +12,9 @@ html {
   .heading {
     font-family: 'Damion', 'Roboto', Arial, sans-serif;
     font-weight: 300;
-    font-size: clamp(48px, 6.67vw, 96px);
+    font-size: clamp(64px, 6.11vw, 88px);
     color: #363D59;
+    margin-bottom: 1.11vw;
   }
 
   .subtitle {
@@ -25,11 +26,11 @@ html {
 
   .subtitle-light {
     font-family: 'Roboto', Arial, sans-serif;
-    font-weight: 250;
-    font-size: clamp(18px, 2.5vw, 36px); 
+    font-weight: 300;
+    font-size: clamp(24px, 2.22vw, 48px);
     color: #221F2F;
     word-wrap: break-word;
-    max-width: 29.51vw;
+    max-width: 30.69vw;
   }
 
   .paragraph {
@@ -47,9 +48,9 @@ html {
   }
 
   .text-section {
-    max-width: 50%;
+    max-width: 34%;
     margin: 1.67vw;
-    margin-top: 4.44vw; 
+    margin-top: 8.04vw; 
   }
 }
 
@@ -62,17 +63,24 @@ body {
   background-color: #FFF7E0;
 }
 
+.header{
+  display: flex;
+  justify-content: space-between;
+  left: 3.33%;
+  position: relative;
+}
+
 .home-illustration {
-  max-width: 46.74vw; 
-  width: 100%;
+  width: 40vw;
   height: auto;
 }
 
 .projects-button {
   background-color: #221F2F;
-  border-radius: 1.67vw; 
-  width: 24.31vw;
-  height: 3.33vw;
+  border-radius: 1.67vw;
+  width: 22.01vw; 
+  height: 3.33vw; 
+  margin-top: 1.11vw; 
 }
 
 .projects-button-text {
@@ -80,19 +88,8 @@ body {
   color: #FFEBB0;
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: 600;
-  font-size: clamp(16px, 1.67vw, 24px); 
+  font-size: clamp(16px, 1.40vw, 24px);
 }
-
-.connect-button {
-  background: none;
-  color: #221F2F;
-  font-family: 'Roboto', Arial, sans-serif;
-  font-weight: 400;
-  font-size: clamp(12px, 1.11vw, 16px);
-  text-decoration-line: underline;
-  border: none;
-}
-
 .social-links {
   display: flex;
   justify-content: start;
@@ -100,11 +97,12 @@ body {
   margin-top: 5vw;
 }
 
-.logo {
-  width: 5vw;
-  height: 5vw;
-  margin: 2.22vw;
+.logo{
+  width: 4.44vw;
+  height: 4.44vw;
+  margin: 1.11vw;
 }
+
 .background-vector{
   position: relative; 
   background-image: url('vectors.png'); 
@@ -194,7 +192,6 @@ body {
 }
 
 .emoji {
-  font-size: 2.5vw;
   line-height: 1;
 }
 
