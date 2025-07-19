@@ -4,7 +4,7 @@ html {
   min-height: 100%;
 }
 
-@media (max-width: 2400px) {
+@media (min-width: 768px) {
   html {
     font-size: 16px;
   }
@@ -71,7 +71,7 @@ body {
 }
 
 .home-illustration {
-  width: 40vw;
+  width: 47vw;
   height: auto;
 }
 
@@ -90,6 +90,7 @@ body {
   font-weight: 600;
   font-size: clamp(16px, 1.40vw, 24px);
 }
+
 .social-links {
   display: flex;
   justify-content: start;
@@ -116,15 +117,15 @@ body {
 .about{
   position: absolute; 
   top: 8%; 
-  left: 2.2%; 
+  left: 3.3%; 
 }
 
 .head-photo{
-  height: 22.36vw;
-  width: 23.33vw;
+  width: 22.36vw;
+  height: 23.33vw;
   position: absolute;
   top: 16%;
-  left: 2.2%;
+  left: 3.3%;
 
 }
 
@@ -136,7 +137,7 @@ body {
   border-radius: 1.11vw;
   position: absolute;
   top: 16%;
-  left: 26.5%;
+  left: 27.6%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,10 +148,11 @@ body {
 .skills-section {
   position: absolute;
   top: 24%;
-  left: 26.5%;
+  left: 27.6%;
   display: flex;
   gap: 1.11vw;
   flex-wrap: wrap;
+  max-width: 69vw;
 }
 
 .skills {
@@ -174,7 +176,7 @@ body {
   border-radius: 1.11vw;
   position: absolute;
   top: 48%;
-  left: 2.2%;
+  left: 3.3%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,7 +187,7 @@ body {
 .soft-section{
   position: absolute;
   top: 56%;
-  left: 2.2%;
+  left: 3.3%;
   display: flex;
   gap: 1.67vw;
   flex-wrap: wrap;
@@ -269,9 +271,51 @@ body {
   border-radius: 16px;
   margin-left: auto;
   margin-right: auto;
-  width: 95.56vw;
-  height: 45.14vw;
+  width: 93.12vw;
+  height: 36.38vw;
   margin-top: -1vw;
+}
+
+.project-picture{
+  position: relative;
+  left: 12.7%;
+  top: 4.11vw;
+  width: 74.58vw;
+  height: 28.06vw;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.tech-stack {
+  position: absolute;
+  top: 1.11vw;
+  right: 7vw;
+  display: flex;
+  flex-direction: column; 
+  gap: 1.11vw;
+}
+
+.tech-stack-skills {
+  font-size:clamp(20px, 1.67vw, 28px);
+  background-color: #FFEBB0;
+  border-radius: 20px;
+  border: 4px solid #FFF7E0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 2.77vw;
+  width: 6.11vw;
+  box-sizing: content-box;
+}
+
+.background-moonstoneblue {
+  background-color: #4C9DB0;
+  border-radius: 0px 0px 16px 16px;
+  position: relative;
+  width: 69.9vw;
+  height: 6.52vw;
+  margin-top: -4.52vw;
 }
 
 .project-container {
@@ -281,48 +325,37 @@ body {
   padding: 4% 6%;
 }
 
+.project-info {
+  display: flex;
+  align-items: flex-end;
+  gap: 1vw;
+}
+
 .project-name {
   position: relative;
-  top: 0;
+  color:#FFF7E0;
   left: 0;
+  top: -2vw;
+  white-space: nowrap;
+
 }
 
-.tech-stack {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.11vw;
-}
-
-.tech-stack-skills {
-  font-size:clamp(20px, 1.67vw, 28px);
-  background-color: #FFEBB0;
-  border-radius: 16px;
-  border: 4px solid #FFF7E0;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 1.67vw;
-  height: 3.61vw;
-  width: fit-content;
-  box-sizing: content-box;
-}
-
-.project-picture{
+.project-type {
   position: relative;
-  left:12.7%;
-  top: -4%;
-  width: 74.58vw;
-  height: 28.06vw;
-  border-radius: 16px;
+  color:#FFF7E0;
+  left: 0;
+  top: -3vw;
+  white-space: nowrap;
 
 }
 
 .access-project{
   position: relative;
-  left:12.7%;
+  left: 4.7%;
+  top: -2vw;
+
 }
+
 .access-button{
   border-radius: 24px;
   border-color: #FFF7E0;
@@ -330,10 +363,92 @@ body {
   box-sizing: border-box;
   border-style: solid;
   color:#FFF7E0;
+  width: 17.22vw;
   background-color: transparent;
   font-size:clamp(20px, 1.67vw, 28px);
   filter: drop-shadow(0 0.14vw 0.28vw rgba(255, 242, 204, 0.62)); 
 }
+
+
+.lets-talk{
+  text-align: center;
+  padding: 4vw 2vw;
+  border-radius: 16px;
+  color: #FFF7E0;
+  width: 80vw;
+  margin: 4vw auto;
+
+}
+
+.left-bottom-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 15vw;
+  height: auto;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.11vw;
+  max-width: 30vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form-name-email{
+  border-radius: 1.11vw;
+  border: 4px solid #363D59;
+  background-color: transparent;
+  width: 47vw;
+  height: 4.3vw
+}
+
+.contact-form-message{
+  border-radius: 1.11vw;
+  border: 4px solid #363D59;
+  background-color: transparent;
+  width: 47vw;
+  height: 8.88vw
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80vw;
+  margin: 0 auto;
+  gap: 2vw;
+}
+
+.social-links-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.send-message-button {
+  background-color: #221F2F;
+  border-radius: 1.67vw;
+  width: 22.01vw; 
+  height: 3.33vw; 
+  margin-top: 1.11vw; 
+  filter: drop-shadow(0 0.14vw 0.28vw rgba(255, 242, 204, 0.62)); 
+  color: #FFEBB0;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 600;
+  font-size: clamp(16px, 1.40vw, 24px);
+}
+
+.send-message-button-text {
+  filter: drop-shadow(0 0.14vw 0.28vw rgba(255, 242, 204, 0.62)); 
+  color: #FFEBB0;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 600;
+  font-size: clamp(16px, 1.40vw, 24px);
+}
+
 
 .btn:focus,
 .btn:active:focus,
