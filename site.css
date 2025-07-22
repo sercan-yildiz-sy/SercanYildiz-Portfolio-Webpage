@@ -274,6 +274,7 @@ body {
   width: 93.12vw;
   height: 36.38vw;
   margin-top: -1vw;
+  position: relative;
 }
 
 .project-picture{
@@ -317,6 +318,34 @@ body {
   height: 6.52vw;
   margin-top: -4.52vw;
 }
+.triangle-arrow {
+  width: 60px;
+  height: 60px;
+  background-color: #FFEBB0;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  transition: background-color 0.3s;
+}
+
+.triangle-arrow:hover {
+  background-color: #FFD060;
+}
+
+.next-arrow {
+  position: absolute;
+  right:3vw;
+  clip-path: polygon(25% 15%, 25% 85%, 75% 50%);
+
+}
+
+.prev-arrow {
+  position: absolute;
+  left:3vw;
+  clip-path: polygon(75% 15%, 75% 85%, 25% 50%);
+}
 
 .project-container {
   display: flex;
@@ -334,7 +363,7 @@ body {
 .project-name {
   position: relative;
   color:#FFF7E0;
-  left: 0;
+  left: -2vw;
   top: -2vw;
   white-space: nowrap;
 
@@ -343,7 +372,7 @@ body {
 .project-type {
   position: relative;
   color:#FFF7E0;
-  left: 0;
+  left: -2vw;
   top: -3vw;
   white-space: nowrap;
 
@@ -384,7 +413,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 15vw;
+  width: 21.6vw;
   height: auto;
 }
 
@@ -448,6 +477,8 @@ body {
   font-weight: 600;
   font-size: clamp(16px, 1.40vw, 24px);
 }
+
+
 
 
 .btn:focus,
