@@ -52,6 +52,9 @@ html {
     margin: 1.67vw;
     margin-top: 8.04vw; 
   }
+
+  
+
 }
 
 body {
@@ -422,7 +425,7 @@ body {
   flex-direction: column;
   gap: 1.11vw;
   max-width: 30vw;
-  margin-left: auto;
+  margin-left: 17.5vw;
   margin-right: auto;
 }
 
@@ -440,6 +443,16 @@ body {
   background-color: transparent;
   width: 47vw;
   height: 8.88vw
+}
+
+.contact-form-texts {
+  padding-left: 2.5vw;
+}
+
+.contact-form-message-texts {
+  padding: 2.5vw;
+  padding-top: 1.25vw;
+  resize: none;
 }
 
 .contact-row {
@@ -460,18 +473,17 @@ body {
 .send-message-button {
   background-color: #221F2F;
   border-radius: 1.67vw;
-  width: 22.01vw; 
+  width: 14.44vw; 
   height: 3.33vw; 
   margin-top: 1.11vw; 
-  filter: drop-shadow(0 0.14vw 0.28vw rgba(255, 242, 204, 0.62)); 
-  color: #FFEBB0;
-  font-family: 'Roboto', Arial, sans-serif;
-  font-weight: 600;
-  font-size: clamp(16px, 1.40vw, 24px);
+  margin-left: 16.25vw;
 }
 
 .send-message-button-text {
-  filter: drop-shadow(0 0.14vw 0.28vw rgba(255, 242, 204, 0.62)); 
+    text-shadow:
+    0 0 0.14vw rgba(255, 242, 204, 0.6),
+    0 0 0.28vw rgba(255, 242, 204, 0.5),
+    0 0 0.42vw rgba(255, 242, 204, 0.4);
   color: #FFEBB0;
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: 600;
