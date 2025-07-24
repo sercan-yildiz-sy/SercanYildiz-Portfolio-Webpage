@@ -8,13 +8,13 @@
         <link rel="stylesheet" href="site.css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:250,300,400,500,600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Dangrek:400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dangrek:400&display=swap" rel="stylesheet">
 
 
     </head>
     <body>      
         <header>
-            <nav class="navbar navbar-expand-sm navbar-light bg-custom mb-3">
+            <nav class="navbar navbar-expand-sm navbar-light mb-3">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
                         aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,11 +44,9 @@
                 <div class="text-section">
                     <h1 class="heading">Hello!</h1>
                     <p class="subtitle-light">I am Sercan Yildiz - software developer with a background in machine learning and data science.</p>
-                    <a href="#work">
-                        <button class="projects-button" href="#work">
-                            <span class="projects-button-text">CHECK OUT MY PROJECTS</span>
-                        </button>
-                    </a>          
+                    <a href="#work" class="projects-button">
+                        <span class="projects-button-text">CHECK OUT MY PROJECTS</span>
+                    </a>      
                     <div class="social-links">
                         <a href="https://github.com/sercan-yildiz-sy" target="_blank" rel="noopener noreferrer">
                             <img src="github-logo.png" alt="Button Image" class="logo">
@@ -61,8 +59,8 @@
                         </a>
                     </div>
                 </div>
-                <img src="home-illustration.png" class="home-illustration" alt="Home Illustration">
-            </div>
+                <div class="home-illustration"></div>
+            </div>  
     
         <div id = "about" class="background-vector">
             <h1 class="subtitle about">A LITTLE ABOUT ME</h1>
@@ -87,27 +85,27 @@
             <span class="soft subtitle">SOFT SKILLS</span>
             <div class="soft-section">
                 <span class="soft-skills">
-                    <img src="Teamwork.png" alt="Teamwork Icon" class="emoji" style="width: 3.06vw; height: 3.47vw;">
+                    <img src="Teamwork.png" alt="Teamwork Icon" class="emoji team">
                     <span class="label">Teamwork</span>
                 </span>
                 <span class="soft-skills">
-                    <img src="Problem Solving.png" alt="Problem Solving Icon" class="emoji" style="width: 2.99vw; height: 3.54vw;">
+                    <img src="Problem Solving.png" alt="Problem Solving Icon" class="emoji problem">
                     <span class="label">Problem-Solving</span>
                 </span>
                 <span class="soft-skills">
-                    <img src="Detail.png" alt="Attention to Detail Icon" class="emoji" style="width: 2.71vw; height: 3.47vw;">
+                    <img src="Detail.png" alt="Attention to Detail Icon" class="emoji detail">
                     <span class="label">Attention to Detail</span>
                 </span>
                 <span class="soft-skills">
-                    <img src="Conflict.png" alt="Communication Icon" class="emoji" style="width: 2.71vw; height: 3.47vw;">
+                    <img src="Conflict.png" alt="Communication Icon" class="emoji communication">
                     <span class="label">Conflict Resolution</span>
                 </span>
                 <span class="soft-skills">
-                    <img src="Time.png" alt="Time Management Icon" class="emoji" style="width: 2.71vw; height: 3.26vw;">
+                    <img src="Time.png" alt="Time Management Icon" class="emoji time">
                     <span class="label">Time Management</span>
                 </span>
                 <span class="soft-skills">
-                    <img src="Initiative.png" alt="Initiative Icon" class="emoji" style="width: 2.92vw; height: 3.54vw;">
+                    <img src="Initiative.png" alt="Initiative Icon" class="emoji initiative">
                     <span class="label">Initiative</span>
                 </span>
             </div>
@@ -130,17 +128,17 @@
                     <span class="paragraph tech-stack-skills">SQL</span>
                     <span class="paragraph tech-stack-skills">C#</span>
                 </div>
-                <div class="background-moonstoneblue">
-                    <div class="project-container">
-                        <div class="project-info">
-                            <span class="subtitle project-name">QUICKLY</span>
-                            <span class="paragraph project-type">INVENTORY MANAGEMENT</span>
-                        </div>
-                        <div class="access-project">
-                            <a href="https://github.com/sercan-yildiz-sy/Quickly" target="_blank" rel="noopener noreferrer">
-                                <button class="paragraph-highlight access-button">Access Project</button>
-                            </a>
-                        </div>
+            </div>
+            <div class="background-moonstoneblue">
+                <div class="project-container">
+                    <div class="project-info">
+                        <span class="subtitle project-name">QUICKLY</span>
+                        <span class="paragraph project-type">INVENTORY MANAGEMENT</span>
+                    </div>
+                    <div class="access-project">
+                        <a href="https://github.com/sercan-yildiz-sy/Quickly" target="_blank" rel="noopener noreferrer">
+                            <button class="paragraph-highlight access-button">Access Project</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -161,6 +159,8 @@
                     <input class="contact-form-name-email paragraph contact-form-texts" type="email" name="email" placeholder="Email" required />
                     <textarea class="contact-form-message paragraph contact-form-message-texts" type="text" name="message" placeholder="Write Your Message Here" required></textarea>
                     <button class="send-message-button send-message-button-text" type="submit">Send Message</button>
+                    <div id="form-message" class="form-message"></div>
+
                 </form>
 
             <div class="social-links-vertical">
