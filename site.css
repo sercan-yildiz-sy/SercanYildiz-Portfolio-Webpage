@@ -295,10 +295,57 @@ body {
   top:-18vw;
   left: 9vw;
   font-size: clamp(20px, 9.09vw, 40px);
-
 }
 
+.background-blue {
+  position: relative;
+  background-color: #363D59;
+  border-radius: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90.45vw;
+  height: 175.91vw;
+  margin-top: -3vw;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 14vw;
+  z-index: -3;
+}
 
+.project-picture{
+  width: 80vw;
+  max-width: 80vw;
+  height: 155.22vw;
+  margin-top: 10.27vw;
+  position: relative;
+  z-index: 1;
+  left:5vw;
+}
+
+.tech-stack{
+  position: relative;
+  top: -172vw;
+  left: 66.36vw;
+  display: flex;
+  flex-direction: column; 
+  gap: 2.72vw;
+}
+
+.tech-stack-skills{
+  background-color: #FFEBB0;
+  border-radius: 16px;
+  border: 4px solid #FFF7E0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 9.1vw;
+  width: 20vw;
+  box-sizing: content-box;
+  }
 
 }
 
@@ -611,7 +658,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-bottom: 14vw; /* Add this line for extra space under */
+  padding-bottom: 14vw; 
 }
 
 .project-picture {
