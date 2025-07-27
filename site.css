@@ -22,7 +22,7 @@ body {
     margin-bottom: 1.11vw;
   }
   .subtitle {
-    font-size: clamp(24px, 7.27, 48px); 
+    font-size: clamp(28px, 7.27vw, 36px); 
     color: #FFF7E0;
     font-family: 'Dangrek', 'Roboto', Arial, sans-serif;
     font-weight: 400;
@@ -53,7 +53,7 @@ body {
   }
 
   .home-illustration {
-    width: 85vw !important;
+    width: 90vw !important;
     height: 110vw !important;
     top:0 !important;
     right:0 !important;
@@ -83,11 +83,11 @@ body {
 }
 
 .projects-button-text {
-  filter: drop-shadow(0 0.23vw 0.45vw rgba(255, 242, 204, 0.5));
+  filter: drop-shadow(0 1vw 2vw rgba(255, 242, 204, 0.5));
   color: #FFEBB0;
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: 600;
-  font-size: clamp(12px, 3.64vw, 16px);
+  font-size: clamp(12px, 3vw, 16px);
 }
 
 .social-links {
@@ -123,7 +123,7 @@ body {
   width: 73.18vw !important;
   height: 76.36vw !important;
   position: relative;
-  top: 16%;
+  top: 33vw;
   left: 5.46vw;
 }
 
@@ -140,7 +140,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: 0.28vw 0.28vw 0 #363D59;
+  box-shadow: 0.84vw 0.84vw 0 #363D59;
 }
 
 .skills-section{
@@ -203,6 +203,7 @@ body {
   align-items: center;
   text-align: center;
   }
+
 .soft-skills::after{
   content: '';
   position: absolute;
