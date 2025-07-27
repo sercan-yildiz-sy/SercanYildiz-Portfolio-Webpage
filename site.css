@@ -53,8 +53,8 @@ body {
   }
 
   .home-illustration {
-    width: 90vw !important;
-    height: 110vw !important;
+    width: 85vw !important;
+    height: 97.72vw !important;
     top:0 !important;
     right:0 !important;
     position: absolute !important;
@@ -181,6 +181,7 @@ body {
   text-align: center;
   box-shadow: 0.84vw 0.84vw 0 #363D59; 
 }
+
 .soft-section{
   position: relative;
   top: 105vw;
@@ -215,8 +216,8 @@ body {
   border-top-color: #FFEBB0;
   border-bottom: 0;
   border-left: 0;
-  margin-left: -2.77vw;
-  margin-bottom: -2.96vw;
+  margin-left: -2.87vw;
+  margin-bottom: -2.86vw;
   filter: drop-shadow(1.68vw 1.68vw 0 #363D59);
   border-radius: 0 0 0.28vw 0;
 }
