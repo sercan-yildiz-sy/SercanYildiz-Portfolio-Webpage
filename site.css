@@ -31,7 +31,7 @@ body {
   .subtitle-light {
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 300;
-    font-size: clamp(24px, 5.45vw, 32px);
+    font-size:clamp(18px, 5.45vw, 24px);
     color: #221F2F;
     word-wrap: break-word;
     max-width: 90vw;
@@ -54,7 +54,7 @@ body {
 
   .home-illustration {
     width: 85vw !important;
-    height: 97.72vw !important;
+    height: 100vw !important;
     top:0 !important;
     right:0 !important;
     position: absolute !important;
@@ -418,7 +418,7 @@ body {
 
 .home-illustration {
   width: 47vw;
-  height: auto;
+  height: 52.36vw;
   background-image: url('home-illustration.png');
   background-repeat: no-repeat; 
 }
@@ -633,17 +633,18 @@ body {
 .the{
   color:#221F2F;
   line-height: 1;
-  position: absolute;
-  top:-80%;
-  left:5%;
+  position: relative;
+  top:-4vw;
+  left:1.5vw;
 }
 
 .projectstext{
   color:#221F2F;
-  position: absolute;
-  top: -84%;
-  left: -15%;
-  transform:rotate(-15.3deg);
+  position: relative;
+  display: inline-block;
+  top: -7vw;
+  left: -2vw;
+  transform: rotate(-15.3deg);
   filter: drop-shadow(0 0.14vw 0.28vw rgba(255, 242, 204, 1)); 
 }
 
@@ -677,17 +678,6 @@ body {
   border-radius: 16px 16px 0px 0px;
 }
 
-.background-moonstoneblue {
-  background-color: #4C9DB0;
-  border-radius: 0px 0px 16px 16px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 77%;
-  height: 7vw;  
-  bottom: 4vw;
-  z-index: 2;
-}
 
 .tech-stack {
   position: absolute;
@@ -740,6 +730,18 @@ body {
   position: absolute;
   left:3vw;
   clip-path: polygon(75% 15%, 75% 85%, 25% 50%);
+}
+
+.background-moonstoneblue {
+  background-color: #4C9DB0;
+  border-radius: 0px 0px 16px 16px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 77%;
+  height: 6.5vw;  
+  bottom: 4vw;
+  z-index: 2;
 }
 
 .project-container {
