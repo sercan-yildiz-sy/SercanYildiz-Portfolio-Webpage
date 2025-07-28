@@ -188,7 +188,9 @@ body {
   left: 5.46vw;
   display: flex;
   gap: 3.63vw;
-  flex-wrap: wrap;}
+  row-gap: 10vw;
+  flex-wrap: wrap;
+}
 
   .soft-skills{
   position: relative;
@@ -207,18 +209,16 @@ body {
 
 .soft-skills::after{
   content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
+  position: relative;
+  bottom: -4vw;
+  left: -5vw;
   width: 0;
   height: 0;
-  border: 2.96vw solid transparent;
+  border: 4.5vw solid transparent;
   border-top-color: #FFEBB0;
   border-bottom: 0;
   border-left: 0;
-  margin-left: -2.87vw;
-  margin-bottom: -2.86vw;
-  filter: drop-shadow(1.68vw 1.68vw 0 #363D59);
+  filter: drop-shadow(0.84vw 1.68vw 0 #363D59);
   border-radius: 0 0 0.28vw 0;
 }
 
@@ -319,17 +319,16 @@ body {
 .project-picture{
   width: 80vw;
   max-width: 80vw;
-  height: 155.22vw;
+  height: 155.23vw;
   margin-top: 10.27vw;
   position: relative;
   z-index: 1;
-  left:5vw;
 }
 
 .tech-stack{
   position: relative;
-  top: -172vw;
-  left: 66.36vw;
+  top: -155vw;
+  left: 56.36vw;
   display: flex;
   flex-direction: column; 
   gap: 2.72vw;
@@ -344,10 +343,104 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 9.1vw;
+  height: 8vw;
   width: 20vw;
   box-sizing: content-box;
   }
+
+  
+.triangle-arrow {
+  width: 4.16vw;
+  height: 4.16vw;
+  background-color: #FFEBB0;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 100%;
+  transition: background-color 0.3s;
+}
+
+.triangle-arrow:hover {
+  background-color: #FFD060;
+}
+
+.next-arrow {
+  position: absolute;
+  right:3vw;
+  clip-path: polygon(25% 15%, 25% 85%, 75% 50%);
+
+}
+
+.prev-arrow {
+  position: absolute;
+  left:3vw;
+  clip-path: polygon(75% 15%, 75% 85%, 25% 50%);
+}
+
+.background-moonstoneblue {
+  background-color: #4C9DB0;
+  border-radius: 0px 0px 16px 16px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 82vw;
+  height: 36.36vw;  
+  bottom: 7vw;
+  z-index: 2;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  gap: 1vw;
+}
+
+.project-name {
+  position: relative;
+  color:#FFF7E0;
+  left: 7.2vw;
+  top: 2vw;
+  white-space: nowrap;
+
+}
+
+.project-type {
+  position: relative;
+  color:#FFF7E0;
+  left: 7.2vw;
+  top: 1vw;
+  white-space: nowrap;
+
+}
+
+.access-project{
+  position: relative;
+  left: 7.2vw;
+  top: 5vw;
+}
+
+.access-button{
+  border-radius: 24px;
+  border-color: #FFF7E0;
+  border-width: 4px;
+  box-sizing: border-box;
+  border-style: solid;
+  color:#FFF7E0;
+  width: 33.86vw;
+  height: 10vw;
+  background-color: transparent;
+  font-size: clamp(14px, 3.64vw, 16px);
+  filter: drop-shadow(0 0.14vw 0.28vw rgba(255, 242, 204, 0.62)); 
+}
 
 }
 
