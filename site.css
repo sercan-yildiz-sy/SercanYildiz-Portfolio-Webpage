@@ -320,6 +320,7 @@ body {
   width: 80vw;
   max-width: 80vw;
   height: 155.23vw;
+  max-height: 155.23vw;
   margin-top: 10.27vw;
   position: relative;
   z-index: 1;
