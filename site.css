@@ -319,8 +319,7 @@ body {
 .project-picture{
   width: 80vw;
   max-width: 80vw;
-  height: 155.23vw;
-  max-height: 155.23vw;
+  height: auto;
   margin-top: 10.27vw;
   position: relative;
   z-index: 1;
@@ -394,10 +393,10 @@ body {
   width: 82vw;
   height: 36.36vw;
   transform: translateX(-50%);
-  bottom: 32.36vw;
-  left: 41.8vw;
+  bottom: 34.36vw;
+  left: 40.8vw;
   z-index: 2;
-  position: relative; 
+  position: absolute; 
 }
 
 .project-container {
