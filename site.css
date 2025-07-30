@@ -325,6 +325,12 @@ body {
   z-index: 1;
 }
 
+.project-picture img {
+  width: 100%;
+  display: block;
+  border-radius: 16px 16px 0px 0px;
+}
+
 .tech-stack{
   position: relative;
   top: -155vw;

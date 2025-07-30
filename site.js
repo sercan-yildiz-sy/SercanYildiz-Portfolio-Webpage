@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const dots = document.querySelectorAll('.slider-dots .dot');
     const prevBtn = document.querySelector('.prev-arrow');
     const nextBtn = document.querySelector('.next-arrow');
+    const slider = document.querySelector('.project-content-wrapper');
     let current = 0;
 
     function showSlide(idx) {
@@ -22,10 +23,25 @@ document.addEventListener('DOMContentLoaded', function () {
     if (prevBtn && nextBtn && slides.length > 0) {
       prevBtn.addEventListener('click', () => goToSlide(current - 1));
       nextBtn.addEventListener('click', () => goToSlide(current + 1));
-      dots.forEach((dot, i) => {
-        dot.addEventListener('click', () => goToSlide(i));
-      });
       showSlide(current);
+    }
+
+    let startX = 0;
+    let endX = 0;
+
+    if (slider) {
+      slider.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].clientX;
+      });
+
+      slider.addEventListener('touchend', function(e) {
+        endX = e.changedTouches[0].clientX;
+        if (endX - startX > 50) {
+          goToSlide(current - 1);
+        } else if (startX - endX > 50) {
+          goToSlide(current + 1); 
+        }
+      });
     }
   });
 
