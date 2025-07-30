@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const dots = document.querySelectorAll('.slider-dots .dot');
     const prevBtn = document.querySelector('.prev-arrow');
     const nextBtn = document.querySelector('.next-arrow');
-    const slider = document.querySelector('.project-content-wrapper');
+    const slider = document.querySelector('.background-blue');
     let current = 0;
 
     function showSlide(idx) {

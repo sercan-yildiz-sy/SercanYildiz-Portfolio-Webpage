@@ -314,6 +314,7 @@ body {
   justify-content: center;
   padding-bottom: 14vw;
   z-index: -3;
+  touch-action: pan-y;
 }
 
 .project-picture{
@@ -333,7 +334,7 @@ body {
 
 .tech-stack{
   position: relative;
-  top: -155vw;
+  top: -150vw;
   left: 56.36vw;
   display: flex;
   flex-direction: column; 
