@@ -168,7 +168,7 @@
                             <div class="access-project">
                                 <a href="https://github.com/sercan-yildiz-sy/Another" target="_blank" rel="noopener noreferrer">
                                     <button class="paragraph-highlight access-button">Access Project</button>
-                                </a>C#
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -189,14 +189,17 @@
         <div id="contact" class="lets-talk">
 
             <span class="heading"> Let's talk!</span>
-            <img src="left-bottom-image.png" alt="Left Bottom Image" class="left-bottom-image">
+            <picture class="left-bottom-image">
+                <source srcset="left-bottom-image-mobile.png" media="(max-width: 768px)">
+                <img src="left-bottom-image.png" alt="Left Bottom Image"/>
+            </picture>
             <div class="contact-row">
                 <form class="contact-form" action="https://formspree.io/f/xzzvzynv" method="POST">
                     <input class="contact-form-name-email paragraph contact-form-texts" type="text" name="name" placeholder="Name" required />
                     <input class="contact-form-name-email paragraph contact-form-texts" type="email" name="email" placeholder="Email" required />
                     <textarea class="contact-form-message paragraph contact-form-message-texts" type="text" name="message" placeholder="Write Your Message Here" required></textarea>
                     <button class="send-message-button send-message-button-text" type="submit">Send Message</button>
-                    <div idSSSS="form-message" class="form-message"></div>
+                    <div id="form-message" class="form-message"></div>
 
                 </form>
 

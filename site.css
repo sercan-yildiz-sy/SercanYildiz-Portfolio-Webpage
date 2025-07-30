@@ -456,6 +456,7 @@ body {
   background-color: transparent;
   font-size: clamp(14px, 3.64vw, 16px);
   filter: drop-shadow(0 0.14vw 0.28vw rgba(255, 242, 204, 0.62)); 
+  z-index: 10;
 }
 
 .lets-talk{
@@ -868,7 +869,7 @@ body {
   aspect-ratio: 16 / 6;
   margin-top: -1vw;
   overflow: hidden;
-  display: flex;
+  display: block;
   align-items: flex-start;
   justify-content: center;
   padding-bottom: 14vw; 
@@ -902,12 +903,11 @@ body {
   border-radius: 0px 0px 16px 16px;
   position: relative;
   transform: translateX(-50%);
-  width: 7.38vw;
+  width: 74.58vw;
   height: 6.5vw;  
   bottom: 6.5vw;
   left: 37.26vw;
   z-index: 2;
-  
 }
 
 .tech-stack {
@@ -944,6 +944,7 @@ body {
   position: relative;
   top: 50%;
   transition: background-color 0.3s;
+  z-index: 10;
 }
 
 .triangle-arrow:hover {
@@ -999,7 +1000,7 @@ body {
   position: relative;
   left: 4.7%;
   top: -2vw;
-
+z-index: 10;
 }
 
 .access-button{
@@ -1013,6 +1014,7 @@ body {
   background-color: transparent;
   font-size:clamp(20px, 1.67vw, 28px);
   filter: drop-shadow(0 0.14vw 0.28vw rgba(255, 242, 204, 0.62)); 
+  z-index: 10;
 }
 
 .slider-dots{
@@ -1124,7 +1126,9 @@ body {
 .project-slide.active {
   display: block;
 }
-
+body {
+  overflow-x: hidden;
+}
 .btn:focus,
 .btn:active:focus,
 .btn-link.nav-link:focus,
