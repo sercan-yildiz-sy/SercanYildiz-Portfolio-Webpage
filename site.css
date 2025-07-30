@@ -396,11 +396,11 @@ body {
 .background-moonstoneblue {
   background-color: #4C9DB0;
   border-radius: 0px 0px 16px 16px;
-  width: 82vw;
+  width: 80vw;
   height: 36.36vw;
   transform: translateX(-50%);
   bottom: 34.36vw;
-  left: 40.8vw;
+  left: 40vw;
   z-index: 2;
   position: absolute; 
 }
@@ -890,11 +890,24 @@ body {
 }
 
 .project-picture img {
-  width: 100%;
+  width: 100% !important;
+  height: auto !important;
   display: block;
-  border-radius: 16px 16px 0px 0px;
 }
 
+
+.background-moonstoneblue {
+  background-color: #4C9DB0;
+  border-radius: 0px 0px 16px 16px;
+  position: relative;
+  transform: translateX(-50%);
+  width: 7.38vw;
+  height: 6.5vw;  
+  bottom: 6.5vw;
+  left: 37.26vw;
+  z-index: 2;
+  
+}
 
 .tech-stack {
   position: absolute;
@@ -949,18 +962,6 @@ body {
   clip-path: polygon(75% 15%, 75% 85%, 25% 50%);
 }
 
-.background-moonstoneblue {
-  background-color: #4C9DB0;
-  border-radius: 0px 0px 16px 16px;
-  position: relative;
-  transform: translateX(-50%);
-  width: 74.56vw;
-  height: 6.5vw;  
-  bottom: 6.5vw;
-  left: 37.26vw;
-  z-index: 2;
-  
-}
 
 .project-container {
   display: flex;
