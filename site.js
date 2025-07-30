@@ -1,3 +1,33 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.project-slide');
+    const dots = document.querySelectorAll('.slider-dots .dot');
+    const prevBtn = document.querySelector('.prev-arrow');
+    const nextBtn = document.querySelector('.next-arrow');
+    let current = 0;
+
+    function showSlide(idx) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === idx);
+      });
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === idx);
+      });
+    }
+
+    function goToSlide(idx) {
+      current = (idx + slides.length) % slides.length;
+      showSlide(current);
+    }
+
+    if (prevBtn && nextBtn && slides.length > 0) {
+      prevBtn.addEventListener('click', () => goToSlide(current - 1));
+      nextBtn.addEventListener('click', () => goToSlide(current + 1));
+      dots.forEach((dot, i) => {
+        dot.addEventListener('click', () => goToSlide(i));
+      });
+      showSlide(current);
+    }
+  });
 
   const form = document.querySelector('form');
   const messageEl = document.getElementById('form-message');
@@ -29,3 +59,4 @@
       messageEl.classList.add('error');
     }
   });
+

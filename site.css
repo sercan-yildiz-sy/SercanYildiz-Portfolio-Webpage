@@ -1110,7 +1110,12 @@ body {
 }
 
 }
-
+.project-slide {
+  display: none;
+}
+.project-slide.active {
+  display: block;
+}
 
 .btn:focus,
 .btn:active:focus,
