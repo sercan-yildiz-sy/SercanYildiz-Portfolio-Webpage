@@ -278,6 +278,7 @@ body {
   margin-top: 170vw;
   margin-left: auto;
   margin-right: auto;
+  z-index: 5;
 }
 
 .projectstext{
@@ -309,14 +310,17 @@ body {
   height: 175.91vw;
   margin-top: -3vw;
   overflow: hidden;
-  display: flex;
+  display: block;
   align-items: flex-start;
   justify-content: center;
   padding-bottom: 14vw;
-  z-index: -3;
-  touch-action: pan-y;
 }
-
+.project-slide {
+  display: none;
+}
+.project-slide.active {
+  display: block;
+}
 .project-picture{
   width: 80vw;
   max-width: 80vw;
@@ -333,12 +337,13 @@ body {
 }
 
 .tech-stack{
-  position: relative;
-  top: -150vw;
-  left: 56.36vw;
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
   display: flex;
   flex-direction: column; 
   gap: 2.72vw;
+  z-index: 2;
 }
 
 .tech-stack-skills{
@@ -355,37 +360,36 @@ body {
   box-sizing: content-box;
   }
 
-.slider-dots {
-  position: absolute; 
-  bottom: 2vw; 
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  gap: 2vw;
-  z-index: 3;
-}
 
-
-.dot {
-  width: 2.5vw;
-  height: 2.5vw;
-  background-color: #FFF7E0;
-  border-radius: 50%;
-  opacity: 1;
-  transition: background-color 0.3s, opacity 0.3s;
-}
-
-.dot.active {
-  background-color: #FFEBB0; 
-  opacity: 1;
-}
-
-  
 .triangle-arrow {
-  display:none;
+  width: 10vw;
+  height: 10vw;
+  background-color: #FFEBB0;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s;
+  z-index: 10;
+  bottom: 0vw;
 }
 
+.triangle-arrow:hover {
+  background-color: #FFD060;
+}
+
+.next-arrow {
+  position: absolute;
+  right:35vw;
+  clip-path: polygon(25% 15%, 25% 85%, 75% 50%);
+
+}
+
+.prev-arrow {
+  position: absolute;
+  left:35vw;
+  clip-path: polygon(75% 15%, 75% 85%, 25% 50%);
+}
 
 .project-content-wrapper {
   position: relative;
@@ -397,13 +401,16 @@ body {
 .background-moonstoneblue {
   background-color: #4C9DB0;
   border-radius: 0px 0px 16px 16px;
-  width: 80vw;
   height: 36.36vw;
-  transform: translateX(-50%);
-  bottom: 34.36vw;
-  left: 40vw;
   z-index: 2;
   position: absolute; 
+  left: 5.2vw;
+  right: 0;
+  bottom: 0;
+  width: 80vw;
+  z-index: 3;
+  transform: none;
+  margin: 0;
 }
 
 .project-container {
@@ -456,7 +463,6 @@ body {
   background-color: transparent;
   font-size: clamp(14px, 3.64vw, 16px);
   filter: drop-shadow(0 0.14vw 0.28vw rgba(255, 242, 204, 0.62)); 
-  z-index: 10;
 }
 
 .lets-talk{

@@ -1,50 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
     const slides = document.querySelectorAll('.project-slide');
-    const dots = document.querySelectorAll('.slider-dots .dot');
     const prevBtn = document.querySelector('.prev-arrow');
     const nextBtn = document.querySelector('.next-arrow');
-    const slider = document.querySelector('.background-blue');
     let current = 0;
+function showSlide(idx) {
+    slides.forEach((slide, i) => slide.classList.toggle('active', i === idx));
+  }
 
-    function showSlide(idx) {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === idx);
-      });
-      dots.forEach((dot, i) => {
-        dot.classList.toggle('active', i === idx);
-      });
-    }
+  function goToSlide(idx) {
+    if (!slides.length) return;
+    current = (idx + slides.length) % slides.length;
+    showSlide(current);
+  }
 
-    function goToSlide(idx) {
-      current = (idx + slides.length) % slides.length;
-      showSlide(current);
-    }
+  if (slides.length) showSlide(0);
 
-    if (prevBtn && nextBtn && slides.length > 0) {
-      prevBtn.addEventListener('click', () => goToSlide(current - 1));
-      nextBtn.addEventListener('click', () => goToSlide(current + 1));
-      showSlide(current);
-    }
+  if (prevBtn) prevBtn.addEventListener('click', () => goToSlide(current - 1));
+  if (nextBtn) nextBtn.addEventListener('click', () => goToSlide(current + 1));
 
-    let startX = 0;
-    let endX = 0;
 
-    if (slider) {
-      slider.addEventListener('touchstart', function(e) {
-        startX = e.touches[0].clientX;
-      });
-
-      slider.addEventListener('touchend', function(e) {
-        endX = e.changedTouches[0].clientX;
-        if (endX - startX > 50) {
-          goToSlide(current - 1);
-        } else if (startX - endX > 50) {
-          goToSlide(current + 1); 
-        }
-      });
-    }
-    
-  });
+});
 
   const form = document.querySelector('form');
   const messageEl = document.getElementById('form-message');
