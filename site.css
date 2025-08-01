@@ -1117,8 +1117,11 @@ z-index: 10;
 }
 
 }
-body {
-  overflow-x: hidden;
+* {
+  outline: 1px solid red; /* helps you see what's overflowing */
+}
+html, body {
+  overflow-x: hidden; /* already included, but ensure it's at the root */
 }
 .project-slide {
   display: none;
