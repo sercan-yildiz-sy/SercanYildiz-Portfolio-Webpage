@@ -54,12 +54,14 @@ body {
 
   .home-illustration {
     width: 88vw !important;
+    height: 100vw !important;
     top:0 !important;
     right:0 !important;
     position: absolute !important;
     background-image: url('home-illustration-mobile.png') !important;
     background-repeat: no-repeat; 
-    aspect-ratio: 187 / 215;
+    background-size: contain;
+    background-position: top right;
   }
 
   .text-section {
@@ -631,6 +633,8 @@ body {
   height: 52.36vw;
   background-image: url('home-illustration.png');
   background-repeat: no-repeat; 
+  background-size: contain;
+  background-position: top right;
 }
 
 
