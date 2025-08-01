@@ -58,7 +58,7 @@ body {
     top:0 !important;
     right:0 !important;
     position: absolute !important;
-    background-image: url('home-illustration-mobile.png') !important;
+    background-image: url('../images/home-illustration-mobile.png') !important;
     background-repeat: no-repeat; 
     background-size: contain;
     background-position: top right;
@@ -106,7 +106,7 @@ body {
 
 .background-vector{
   position: relative; 
-  background-image: url('vectors-mobile.png'); 
+  background-image: url('../images/vectors-mobile.png'); 
   background-repeat: no-repeat; 
   background-size: cover; 
   height: 225vw; 
@@ -271,7 +271,7 @@ body {
 
  .background-arrow{
   position: relative; 
-  background-image: url('arrow-mobile.png'); 
+  background-image: url('../images/arrow-mobile.png'); 
   background-repeat: no-repeat; 
   background-size: cover; 
   width: 54.09vw;
@@ -308,7 +308,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 90.45vw;
-  height: 175.91vw;
+  height: 183.91vw;
   margin-top: -3vw;
   overflow: hidden;
   display: block;
@@ -367,7 +367,7 @@ body {
   position: relative;
   transition: background-color 0.3s;
   z-index: 10;
-  bottom: 0vw;
+  bottom: 3vw;
 }
 
 .triangle-arrow:hover {
@@ -631,7 +631,7 @@ body {
 .home-illustration {
   width: 47vw;
   height: 52.36vw;
-  background-image: url('home-illustration.png');
+  background-image: url('../images/home-illustration.png');
   background-repeat: no-repeat; 
   background-size: contain;
   background-position: top right;
@@ -675,7 +675,7 @@ body {
 
 .background-vector{
   position: relative; 
-  background-image: url('vectors.png'); 
+  background-image: url('../images/vectors.png'); 
   background-repeat: no-repeat; 
   background-size: cover; 
   height: 76.39vw; 
@@ -834,7 +834,7 @@ body {
 
 .background-arrow{
   position: relative; 
-  background-image: url('arrow.png'); 
+  background-image: url('../images/arrow.png'); 
   background-repeat: no-repeat; 
   background-size: cover; 
   height: 6.5vw; 
@@ -842,6 +842,7 @@ body {
   margin-top: 15vw;
   margin-left: auto;
   margin-right: auto;
+  z-index: 2;
 }
 
 .the{
