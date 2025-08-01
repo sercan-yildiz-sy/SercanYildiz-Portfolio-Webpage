@@ -109,7 +109,7 @@ body {
   background-repeat: no-repeat; 
   background-size: cover; 
   height: 225vw; 
-  width: 99vw;
+  width: 100%;
   margin-top: 17vw;
 }
 
@@ -187,7 +187,7 @@ body {
   top: 105vw;
   left: 5.46vw;
   display: flex;
-  gap: 3.63vw;
+  gap: 10vw;
   row-gap: 10vw;
   flex-wrap: wrap;
 }
@@ -472,7 +472,6 @@ body {
   color: #FFF7E0;
   width: 80vw;
   margin: 4vw auto;
-
 }
 
 .left-bottom-image {
@@ -682,7 +681,7 @@ body {
   background-repeat: no-repeat; 
   background-size: cover; 
   height: 76.39vw; 
-  width: 99vw;
+  width: 100%;
   margin-top: 0.694vw;
 }
 
@@ -1124,17 +1123,11 @@ z-index: 10;
 .form-message.error {
   color: #f44336; 
 }
-
-}
-.project-slide {
-  display: none;
-}
-.project-slide.active {
-  display: block;
 }
 body {
   overflow-x: hidden;
 }
+
 .btn:focus,
 .btn:active:focus,
 .btn-link.nav-link:focus,
