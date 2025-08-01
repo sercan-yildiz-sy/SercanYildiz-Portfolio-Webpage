@@ -315,12 +315,7 @@ body {
   justify-content: center;
   padding-bottom: 14vw;
 }
-.project-slide {
-  display: none;
-}
-.project-slide.active {
-  display: block;
-}
+
 .project-picture{
   width: 80vw;
   max-width: 80vw;
@@ -1022,9 +1017,6 @@ z-index: 10;
   z-index: 10;
 }
 
-.slider-dots{
-  display:none;
-}
 
 .lets-talk{
   text-align: center;
@@ -1123,9 +1115,16 @@ z-index: 10;
 .form-message.error {
   color: #f44336; 
 }
+
 }
 body {
   overflow-x: hidden;
+}
+.project-slide {
+  display: none;
+}
+.project-slide.active {
+  display: block;
 }
 
 .btn:focus,
