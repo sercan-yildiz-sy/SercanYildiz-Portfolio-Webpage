@@ -53,7 +53,7 @@ body {
   }
 
   .home-illustration {
-    width: 85vw !important;
+    width: 88vw !important;
     height: 100vw !important;
     top:0 !important;
     right:0 !important;
@@ -1117,11 +1117,9 @@ z-index: 10;
 }
 
 }
-* {
-  outline: 1px solid red; /* helps you see what's overflowing */
-}
+
 html, body {
-  overflow-x: hidden; /* already included, but ensure it's at the root */
+  overflow-x: hidden;
 }
 .project-slide {
   display: none;
