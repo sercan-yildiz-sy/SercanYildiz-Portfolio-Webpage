@@ -579,7 +579,7 @@ body {
   }
 
   .subtitle {
-    font-size: clamp(38px, 3.33vw, 32px); 
+    font-size: clamp(32px, 3.25vw, 38px); 
     color: #FFF7E0;
     font-family: 'Dangrek', 'Roboto', Arial, sans-serif;
     font-weight: 400;
