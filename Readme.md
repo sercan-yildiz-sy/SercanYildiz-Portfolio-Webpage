@@ -24,6 +24,7 @@ This is a responsive personal portfolio website for Sercan Yildiz, a software de
 ## File Structure
 
 - `index.html` — Main HTML structure for the portfolio.
+  
 - `site.css` — All custom styles, including responsive and mobile-specific rules.
 
 - `site.js` — JavaScript for slider functionality and form handling.
@@ -33,7 +34,9 @@ This is a responsive personal portfolio website for Sercan Yildiz, a software de
 ## How to Run
 
 1. **Clone or Download** this repository.
+
 2. Place all files (`index.html`, `site.css`, `site.js`, and images) in the same directory.
+
 3. Open `index.html` in your browser.
 
 ---
@@ -42,8 +45,10 @@ This is a responsive personal portfolio website for Sercan Yildiz, a software de
 
 - **Projects:**  
   Edit the `.project-slide` sections in `index.html` to add or update your projects.
+
 - **Skills:**  
   Update the `.skills-section` and `.soft-section` in `index.html` to reflect your technical and soft skills.
+
 - **Contact:**  
   The contact form uses [Formspree](https://formspree.io/). Update the `action` attribute in the form if you want to use your own endpoint.
 
