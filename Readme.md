@@ -10,9 +10,13 @@ This is a responsive personal portfolio website for Sercan Yildiz, a software de
 ## Features
 
 - **Responsive Design:** Optimized for both desktop and mobile devices.
+
 - **Project Slider:** Arrow navigation for both desktop and mobile devices.
+
 - **Tech Stack Display:** Shows relevant technologies for each project.
+
 - **Contact Form:** Integrated with Formspree for easy messaging.
+
 - **Social Links:** Quick access to GitHub, LinkedIn, Email, and downloadable CV.
 
 ---
