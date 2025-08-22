@@ -1,5 +1,8 @@
 # Sercan Yildiz Portfolio Webpage
 
+
+
+
 This is a responsive personal portfolio website for Sercan Yildiz, a software developer with a background in machine learning and data science. The site showcases projects, technical and soft skills, and provides contact options.
 
 ---
