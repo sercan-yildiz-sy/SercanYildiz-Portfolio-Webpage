@@ -17,7 +17,9 @@ This is a responsive personal portfolio website for Sercan Yildiz, a software de
 ## File Structure
 
 - `index.html` — Main HTML structure for the portfolio.
+  
 - `site.css` — All custom styles, including responsive and mobile-specific rules.
+  
 - `site.js` — JavaScript for slider functionality and form handling.
 
 ---
