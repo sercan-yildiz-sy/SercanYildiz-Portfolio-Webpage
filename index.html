@@ -212,10 +212,17 @@
                 <form class="contact-form" action="https://formspree.io/f/xzzvzynv" method="POST">
                     <input class="contact-form-name-email paragraph contact-form-texts" type="text" name="name" placeholder="Name" required />
                     <input class="contact-form-name-email paragraph contact-form-texts" type="email" name="email" placeholder="Email" required />
+                    <span class="email-error paragraph">*Invalid email address </span>
                     <textarea class="contact-form-message paragraph contact-form-message-texts" type="text" name="message" placeholder="Write Your Message Here" required></textarea>
                     <button class="send-message-button send-message-button-text" type="submit">Send Message</button>
-                    <div id="form-message" class="form-message"></div>
-
+                    <div class="form-message">
+                        <img src="images/message-sent.png" alt="Message Sent" class="message-sent-icon" />
+                        <div class="message-sent-texts">
+                            <span class="message-sent-text paragraph">Thank you!</span>
+                            <span class="message-sent-text paragraph-highlight">Your message was sent.</span>
+                        </div>
+                    </div>
+                    
                 </form>
 
                 <div class="social-links-bottom">
