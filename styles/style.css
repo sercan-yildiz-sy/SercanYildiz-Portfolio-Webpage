@@ -1195,3 +1195,25 @@ html, body {
 .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #FFEBB0;
+}
+
+.swiper-pagination-bullet {
+  background: #FFEBB0;
+}

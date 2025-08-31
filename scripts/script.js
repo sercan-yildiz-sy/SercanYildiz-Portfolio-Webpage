@@ -19,6 +19,21 @@ function showSlide(idx) {
   if (nextBtn) nextBtn.addEventListener('click', () => goToSlide(current + 1));
 
 
+  // Swiper initialization
+  const swiper = new Swiper('.mySwiper', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    grabCursor: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+  });
 });
 
   const form = document.querySelector('form');
